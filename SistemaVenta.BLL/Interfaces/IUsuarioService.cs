@@ -1,7 +1,6 @@
 ﻿using SistemaVenta.Entity;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,10 +20,12 @@ namespace SistemaVenta.BLL.Interfaces
 
         Task<Usuario> ObtenerPorId(int IdUsuario);
 
-        Task<bool> GuardarPerfil(Usuario entidad);
+        Task<bool> GuardarPefil(Usuario entidad);
 
         Task<bool> CambiarClave(int IdUsuario, string ClaveActual, string ClaveNueva);
 
         Task<bool> RestablecerClave(string Correo, string UrlPlantillaCorreo);
+
+
     }
 }
